@@ -1,6 +1,6 @@
 {
   "name": "qcloud_avc_sig",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "sig generator for qcloud avc",
   "scripts": {
     "test": "echo \"no test yet\"",

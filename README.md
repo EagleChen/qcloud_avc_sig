@@ -10,7 +10,7 @@ docker run -d -p 13001:13001 -v /tmp/private_key:/app/private_key:ro -v /tmp/pub
 
 ###如何调用
 ```
-curl 'localhost:13001/sig?appid=1400014111&userid=uuu'
+curl 'localhost:13001/sig?appid=1400014111&userid=uuu&expire=2592000'
 ```
 
 ###为什么要做这个镜像？

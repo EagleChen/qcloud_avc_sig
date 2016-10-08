@@ -16,6 +16,7 @@ app.get("/ping", function(req, res) {
 app.get("/sig", function(req, res) {
   var appid = req.query.appid;
   var userid = req.query.userid;
+  var expire = req.query.expire;
   if (!appid || !userid) {
     res.send("");
     return;
@@ -24,6 +25,7 @@ app.get("/sig", function(req, res) {
   var sigUtil = new Sig({
     sdk_appid: appid,
     account_type: '0',
+    expire_after: expire,
     private_key: privateKey,
     public_key: publicKey
   });
